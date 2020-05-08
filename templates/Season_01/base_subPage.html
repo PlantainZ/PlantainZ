@@ -1,0 +1,17 @@
+{% extends "Season_01/base.html" %}
+{% block body %}
+
+    {% block cumbar %}
+    <section class="inner-banner">
+    </section>
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb breadcrumb-padding">
+        <li class="breadcrumb-item"><a href="index">首页</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{% block barName %}ooooo{% endblock %}</li>
+    </ol>
+    </nav>
+    {% endblock %}
+
+    {% block else %}{% endblock %}
+
+{% endblock %}

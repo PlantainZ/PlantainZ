@@ -1,0 +1,378 @@
+{% extends 'Season_01/base_subPage.html' %}
+{% block title%}今日计划{% endblock %}
+{% block barName %}今日计划{% endblock %}
+
+
+
+
+{% block else %}
+<!-- about page section1-->
+<section class="w3l-about" id="top_tasks">
+    <div class="container">
+        <div class="row align-items-center">
+              <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                <h4 class="section-title">今日首三</h4>
+{#                  <p class="text-center">农历 四月十六</p>#}
+              </div>
+            </div>
+
+
+
+        <div class="row about-content">
+            <div class="col-lg-6 info mb-lg-0 mb-5 align-center">
+
+{#                <span class="badge badge-warning">置 顶</span>#}
+{#                <hr>#}
+
+                <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0"><!---->
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <div><span class="badge badge-danger" style="float: left;margin-right: 7px;margin-top: 4px">1</span>
+                <span><h5>today页面</h5></span>
+            </div>
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <div><span class="badge badge-warning" style="float: left;margin-right: 7px;margin-top: 4px">2</span>
+                <span><h5>tmrw页面</h5></span>
+            </div>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <div><span class="badge badge-info" style="float: left;margin-right: 7px;margin-top: 4px">3</span>
+                <span><h5>摘星问月</h5></span>
+            </div>
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+{#                <button id='top_task_btn' onclick="top_task_folder()" type="button" class="btn btn-warning" style = 'float: right;'><b>已完成</b></button>#}
+            </div>
+{#            <div class="col-lg-6">#}
+{#                <img id='top_task_img' src="../../static/assets/images/鹿溪.jpg" class="img-fluid img-shadow" alt="about">#}
+{#            </div>#}
+        </div>
+    </div>
+</section>
+<!-- //about page section1-->
+
+
+<!-- /mobile section --->
+<section class="w3l-mobile-content-6">
+    <div class="mobile-info">
+        <!-- /mobile-info-->
+        <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                <h4 class="section-title">正在进行</h4>
+                  <p class="text-center">现在与未来，都在下面啦~</p>
+              </div>
+            </div>
+
+            <div style="margin-top: 50px" class="row mobile-info-inn mx-lg-0">
+                <div class="col-lg-4 mobile-right">
+                    <div class="row mobile-right-grids mb-lg-5 mb-4">
+                        <div class="col-2 mobile-right-icon">
+                            <div class="mobile-icon">
+                                <span class="fa fa-html5"></span>
+                            </div>
+                        </div>
+                        <div class="col-10 mobile-right-info">
+                            <h6><a href="#url">《红楼梦》</a></h6>
+                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="row mobile-right-grids mb-lg-5 mb-4">
+                        <div class="col-2 mobile-right-icon">
+                            <div class="mobile-icon">
+                                <span class="fa fa-gamepad"></span>
+                            </div>
+                        </div>
+                        <div class="col-10 mobile-right-info">
+                            <h6><a href="#url">《西游记》</a></h6>
+                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="row mobile-right-grids">
+                        <div class="col-2 mobile-right-icon">
+                            <div class="mobile-icon">
+                                <span class="fa fa-id-badge"></span>
+                            </div>
+                        </div>
+                        <div class="col-10 mobile-right-info">
+                            <h6><a href="#url">《三国演义》</a></h6>
+                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mobile-left">
+                    <img style="border-radius: 15px" src="../../static/assets/images/咕咕咕.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-4 mobile-right">
+                    <div class="row mobile-right-grids mb-lg-5 mb-4">
+                        <div class="col-2 mobile-right-icon">
+                            <div class="mobile-icon">
+                                <span class="fa fa-css3"></span>
+                            </div>
+                        </div>
+                        <div class="col-10 mobile-right-info">
+                            <h6><a href="#url">《水浒传》</a></h6>
+                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="row mobile-right-grids mb-lg-5 mb-4">
+                        <div class="col-2 mobile-right-icon">
+                            <div class="mobile-icon">
+                                <span class="fa fa-keyboard-o"></span>
+                            </div>
+                        </div>
+                        <div class="col-10 mobile-right-info">
+                            <h6><a href="#url">《镜花缘》</a></h6>
+                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="row mobile-right-grids">
+                        <div class="col-2 mobile-right-icon">
+                            <div class="mobile-icon">
+                                <span class="fa fa-recycle"></span>
+                            </div>
+                        </div>
+                        <div class="col-10 mobile-right-info">
+                            <h6><a href="#url">《本草纲目》</a></h6>
+                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
+                                adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- //mobile-info-->
+    </div>
+</section>
+<!-- //mobile section --->
+
+<!-- about page team section -->
+<section class="w3l-team-main-6">
+    <!-- /team-grids -->
+    <div class="team-content">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                    <h4 class="section-title">未来计划</h4>
+                    <p class="text-center">不要急，所有事情都会有尽头的。</p>
+                </div>
+            </div>
+            <div class="row grid-col-4 text-center mt-5">
+
+                <table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">顺序</th>
+      <th scope="col">书名</th>
+      <th scope="col">项目名</th>
+        <th scope="col">已复盘</th>
+      <th scope="col">状态</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>《追风筝的人》</td>
+      <td>阅读2</td>
+        <td>0</td>
+      <td>预备</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>《百年孤独》</td>
+      <td>阅读3</td>
+        <td>0</td>
+      <td><span style="color: red;"><b>在读</b></span></td>
+    </tr>
+{#    <tr>#}
+{#      <th scope="row">3</th>#}
+{#      <td colspan="2">Larry the Bird</td>#}
+{#      <td>@twitter</td>#}
+{#    </tr>#}
+  </tbody>
+</table>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- /team-grids -->
+</section>
+<!-- //about page team section -->
+
+<!-- about page form section -->
+<section class="forms-29">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                <h4 class="section-title">好书特评</h4>
+                <p class="text-center">哎呀。</p>
+            </div>
+        </div>
+        <div class="form-main-cont-29 mt-5">
+            <div class="content-29-form d-grid">
+                <form action="#" method="post">
+                    <div class="forms-29-form">
+                        <div class="form-group">
+                            <label class="input__label">书名</label>
+                            <div class="input-icon position-relative">
+                                <span class="fa fa-user-o"></span>
+                                <input type="text" name="name" class="input__style" placeholder="First Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="input__label">作者</label>
+                            <div class="input-icon position-relative">
+                                <span class="fa fa-envelope-open-o"></span>
+                                <input type="email" name="email" class="input__style" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputTemplate" class="input__label">选择分数</label>
+                            <div class="input-icon position-relative">
+                                <span class="fa fa-get-pocket"></span>
+                                <select id="inputTemplate" class="input__style">
+                                    <option selected="">选择...</option>
+                                    <option>1分</option>
+                                    <option>2分</option>
+                                </select>
+                                </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-style mt-2">Lets Talk</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- move top -->
+<button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
+  <span class="fa fa-angle-up"></span>
+</button>
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction()
+  };
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("movetop").style.display = "block";
+    } else {
+      document.getElementById("movetop").style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+<!-- //move top -->
+
+<!-- javascript -->
+<script src="../../static/assets/js/jquery-3.3.1.min.js"></script>
+
+<!-- libhtbox -->
+<script src="../../static/assets/js/lightbox-plus-jquery.min.js"></script>
+
+<!-- particles -->
+<script src='../../static/assets/js/particles.min.js'></script>
+<script src="../../static/assets/js/script.js"></script>
+<!-- //particles -->
+
+<!-- owl carousel -->
+<script src="../../static/assets/js/owl.carousel.js"></script>
+<script>
+  $(document).ready(function () {
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+      margin: 10,
+      nav: true,
+      loop: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        767: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  })
+</script>
+
+<!-- disable body scroll which navbar is in active -->
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+  
+  function top_task_folder() {
+      $('#top_task_img').fadeToggle();
+      $("#top_task_info").fadeToggle();
+  }
+
+</script>
+<!-- disable body scroll which navbar is in active -->
+
+<!-- bootstrap -->
+<script src="../../static/assets/js/bootstrap.min.js"></script>
+
+{% endblock %}

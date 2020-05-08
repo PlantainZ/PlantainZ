@@ -1,0 +1,61 @@
+/*背景图片设置*/
+body{
+    background-image: url("../../assets/images/云无月原身.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*登录框其实是有阴影的不过效果好像不大*/
+#shadow{
+    height: 310px;
+    width: 500px;
+    margin: 140px auto;
+    opacity: 0.8;
+}
+
+#loginSetting{
+    margin: 200px auto;
+    color: ghostwhite;
+    font-family: Consolas;
+    font-size: 50px;
+}
+
+/*是个叫记住密码的复选框*/
+#select01{
+    float:right;
+    margin-right: 10px;
+}
+
+/*叫自动登录的框*/
+#select02{
+    margin-right: 30px;
+    float:right;
+}
+
+/*提交按钮*/
+#sub_btn{
+    margin-top: 15px;
+    margin-left: 390px;
+}
+
+.coverLayer{
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:998;
+    background-color:#000;
+    opacity:0.6;
+    display:block;
+}
+
+footer{
+    position: absolute; /*相对于父元素contanier定位*/
+    width: 55%;
+    text-align: right;
+    bottom: 10px;/*始终距离它的父元素的底部为0px.则是处于父元素的最底*/
+    color: white;
+}

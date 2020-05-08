@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="../../static/myCmpn/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/myCmpn/css/login.css">
+     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../../static/myCmpn/js/jquery-3.5.0.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../../static/myCmpn/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id = shadow>
+    <!--login字体-->
+    <b id = "loginSetting">Login</b>
+
+    <!--action="/user/login" 没有action,那么就要靠url来捕获，传送到loginView-->
+    <form method="post">
+        {% csrf_token %}
+        <div class="shadow p-3 mb-5 bg-white rounded" >
+      <div class="form-group">
+        <label for="exampleInputEmail1"><b>用户名</b></label>
+        <input name="username" class="form-control" id="exampleInputEmail1" value="{{ username }}" placeholder="少动凡心多读书">
+        <small id="emailHelp" class="form-text text-muted">让我看看是哪个小可爱又来找我玩了</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1"><b>密码</b></label>
+        <input name = "pwd" type="password" class="form-control" id="exampleInputPassword1" placeholder="多写算法早睡觉">
+      </div>
+
+      <!--两个复选框-->
+      <div class="form-check" >
+        <div id="select01">
+        <input name="remember" type="checkbox" class="form-check-input" id="exampleCheck1" {{ checked }}>
+        <label class="form-check-label" for="exampleCheck1">记住用户</label>
+       </div>
+        <div id = "select02">
+            <input name="auto_login" type="checkbox" class="form-check-input" id="exampleCheck2">
+            <label class="form-check-label" for="exampleCheck1">自动登录</label>
+        </div>
+       </div>
+
+      <!--提交按钮 -->
+      <button type="submit" id="sub_btn" class="btn btn-primary">登&nbsp;&nbsp;录</button>
+<!-- value="登&nbsp;&nbsp;录"-->
+
+              <!--data-toggle="modal" data-target="#exampleModal"-->
+            <a href="user/register">
+                <span style="float: left;margin-top: -20px">没有账号？去注册>></span>
+            </a>
+    </div>
+    </form>
+</div>
+<!--版权信息-->
+
+
+<footer>
+　　© 卷积神经网络 版权所有<br />
+</footer>
+</body>
+
+<!--登录信息·JS处理-->
+<script type="text/javascript">
+</script>
+</html>
