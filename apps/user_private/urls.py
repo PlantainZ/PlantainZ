@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from apps.user_private.views import firstPageView,todayView,registerView,LoginView,ActiveView,tmrwView
+from apps.user_private.views import firstPageView,todayView,registerView,LoginView,ActiveView,tmrwView,pickStarView
 from apps.user_private.tests import dataTest
 
 app_name = 'user_private'
@@ -12,6 +12,7 @@ urlpatterns = [
     # 需要登录才能访问的：今日 & 明日 界面
     url(r'^today$', todayView.as_view(), name='today'),
     url(r'^tomorrow$', tmrwView.as_view(), name='tomorrow'),
+    url(r'^pickStar$',pickStarView.as_view(),name='pickStar'),
 
 
     # 其它操作

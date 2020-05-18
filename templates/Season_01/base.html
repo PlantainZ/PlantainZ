@@ -12,7 +12,7 @@
 
     <!-- Template CSS -->
     <script type="text/javascript" src="{% static '/myCmpn/js/jquery-3.5.0.min.js' %}"></script>
-    <script type="text/javascript" src="{% static '/myCmpn/js/bootstrap.js' %}"></script>
+{#    <script type="text/javascript" src="{% static '/myCmpn/js/bootstrap.js' %}"></script>#}
 
     <link rel="stylesheet" href="{% static '/myCmpn/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static '/assets/css/style-starter.css' %}">
@@ -39,13 +39,16 @@
                   <a class="nav-link" href="firstPage">首页 <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="today">今日计划</a>
+                  <a class="nav-link" href="today">today</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="tomorrow">明日预览</a>
+                  <a class="nav-link" href="pickStar">月度汇总</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="backup/B_pickStar.html">摘星问月</a>
+                  <a class="nav-link" href="tomorrow">图表可视化</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">骚话大全</a>
               </li>
           </ul>
           <ul class="navbar-nav">
@@ -98,10 +101,10 @@
         <div class="col-lg-3 col-md-4 mt-lg-0 mt-5">
           <h4 class="footer-title">Quick Links</h4>
           <ul class="footer-list">
-            <li><a href="backup/B_today.html"> About company</a></li>
-            <li><a href="backup/B_tmrw.html"> Explore services</a></li>
-            <li><a href="#work"> How does we Work?</a></li>
-            <li><a href="#projects"> View projects</a></li>
+            <li><a href="backup/B_today.html"> TODAY</a></li>
+            <li><a href="backup/B_tmrw.html"> 注册页面</a></li>
+            <li><a href="#work"> 月度汇总</a></li>
+            <li><a href="#projects"> 骚话大全</a></li>
           </ul>
         </div>
         <!-- Newsletter -->

@@ -244,3 +244,7 @@ class ActiveView(View):
             # 激活链接一过期
             return HttpResponse('激活链接已经过期')
             # 实际操作要给它返回一个提示页面，而不是字
+
+class pickStarView(View):
+    def get(self,request):
+        return render(request, 'Season_01/06_pickStar.html')

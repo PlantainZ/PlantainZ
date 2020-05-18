@@ -1,197 +1,16 @@
 {% extends 'Season_01/base_subPage.html' %}
+{% load static %}
 {% block title%}今日计划{% endblock %}
+{% block loadCss %}
+    <link rel="stylesheet" href="{% static '/myCmpn/css/today.css' %}">
+    <link rel="stylesheet" href="{% static '/myCmpn/iconfont/iconfont.css' %}">
+{% endblock %}
 {% block barName %}今日计划{% endblock %}
 
 
 
 
 {% block else %}
-<!-- about page section1-->
-<section class="w3l-about" id="top_tasks">
-    <div class="container">
-        <div class="row align-items-center">
-              <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-                <h4 class="section-title">今日首三</h4>
-{#                  <p class="text-center">农历 四月十六</p>#}
-              </div>
-            </div>
-
-
-
-        <div class="row about-content">
-            <div class="col-lg-6 info mb-lg-0 mb-5 align-center">
-
-{#                <span class="badge badge-warning">置 顶</span>#}
-{#                <hr>#}
-
-                <div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0"><!---->
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <div><span class="badge badge-danger" style="float: left;margin-right: 7px;margin-top: 4px">1</span>
-                <span><h5>today页面</h5></span>
-            </div>
-        </button>
-      </h2>
-    </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <div><span class="badge badge-warning" style="float: left;margin-right: 7px;margin-top: 4px">2</span>
-                <span><h5>tmrw页面</h5></span>
-            </div>
-        </button>
-      </h2>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <div><span class="badge badge-info" style="float: left;margin-right: 7px;margin-top: 4px">3</span>
-                <span><h5>摘星问月</h5></span>
-            </div>
-        </button>
-      </h2>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-{#                <button id='top_task_btn' onclick="top_task_folder()" type="button" class="btn btn-warning" style = 'float: right;'><b>已完成</b></button>#}
-            </div>
-{#            <div class="col-lg-6">#}
-{#                <img id='top_task_img' src="../../static/assets/images/鹿溪.jpg" class="img-fluid img-shadow" alt="about">#}
-{#            </div>#}
-        </div>
-    </div>
-</section>
-<!-- //about page section1-->
-
-
-<!-- /mobile section --->
-<section class="w3l-mobile-content-6">
-    <div class="mobile-info">
-        <!-- /mobile-info-->
-        <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-                <h4 class="section-title">正在进行</h4>
-                  <p class="text-center">现在与未来，都在下面啦~</p>
-              </div>
-            </div>
-
-            <div style="margin-top: 50px" class="row mobile-info-inn mx-lg-0">
-                <div class="col-lg-4 mobile-right">
-                    <div class="row mobile-right-grids mb-lg-5 mb-4">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-html5"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">《红楼梦》</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row mobile-right-grids mb-lg-5 mb-4">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-gamepad"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">《西游记》</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row mobile-right-grids">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-id-badge"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">《三国演义》</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mobile-left">
-                    <img style="border-radius: 15px" src="../../static/assets/images/咕咕咕.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-4 mobile-right">
-                    <div class="row mobile-right-grids mb-lg-5 mb-4">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-css3"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">《水浒传》</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row mobile-right-grids mb-lg-5 mb-4">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-keyboard-o"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">《镜花缘》</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="row mobile-right-grids">
-                        <div class="col-2 mobile-right-icon">
-                            <div class="mobile-icon">
-                                <span class="fa fa-recycle"></span>
-                            </div>
-                        </div>
-                        <div class="col-10 mobile-right-info">
-                            <h6><a href="#url">《本草纲目》</a></h6>
-                            <p>Lorem ipsum dolor sit amet,Ea sed illum facere aperiam sequi optio consectetur
-                                adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- //mobile-info-->
-    </div>
-</section>
-<!-- //mobile section --->
 
 <!-- about page team section -->
 <section class="w3l-team-main-6">
@@ -200,8 +19,13 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-                    <h4 class="section-title">未来计划</h4>
-                    <p class="text-center">不要急，所有事情都会有尽头的。</p>
+{#                    <h4 class="section-title">今日计划</h4>#}
+                    <span style="float: left">今日进度：</span>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <hr/>
+{#                    <p class="text-center">不要急，所有事情都会有尽头的。</p>#}
                 </div>
             </div>
             <div class="row grid-col-4 text-center mt-5">
@@ -210,27 +34,71 @@
   <thead class="thead-dark">
     <tr>
       <th scope="col">顺序</th>
-      <th scope="col">书名</th>
-      <th scope="col">项目名</th>
+      <th scope="col">任务名</th>
+      <th scope="col">任务章节</th>
         <th scope="col">已复盘</th>
-      <th scope="col">状态</th>
+      <th scope="col">状态确认</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
+  <!--data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"-->
+    <tr id="collapse01" data-toggle="modal" data-target="#exampleModal">
       <th scope="row">1</th>
       <td>《追风筝的人》</td>
       <td>阅读2</td>
         <td>0</td>
-      <td>预备</td>
+      <td>
+          就位
+	</td>
     </tr>
-    <tr>
+    <tr class="collapse" id="collapseExample">
+              <th scope="row">详细</th>
+            <td colspan="4">
+             <div class="card card-body">
+          aaaaaaaaaaaaaaaaaaaaaaafgaegregrfgha
+              </div>
+        </td>
+    </tr>
+
+
+
+    <tr data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
       <th scope="row">2</th>
       <td>《百年孤独》</td>
       <td>阅读3</td>
         <td>0</td>
-      <td><span style="color: red;"><b>在读</b></span></td>
+      <td><span style="color: red;"><b>正在进行</b></span></td>
     </tr>
+<tr class="collapse" id="collapseExample2">
+              <th scope="row">详细</th>
+            <td colspan="4">
+             <div class="card card-body">
+          aaaaabbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaafgaegregrfgha
+              </div>
+        </td>
+    </tr>
+
+
+
+
+
+    <tr data-toggle="collapse" data-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+      <th scope="row">2</th>
+      <td>《欧洲史》</td>
+      <td>阅读5</td>
+        <td>0</td>
+      <td><span style="color: black;">已完成</span></td>
+    </tr>
+<tr class="collapse" id="collapseExample3">
+              <th scope="row">详细</th>
+            <td colspan="4">
+             <div class="card card-body">
+          aaaaabbbbbbbbbbbbbbbbbbbbaaaaaaaaaaaaaaaaafgaegregrfgha
+              </div>
+        </td>
+    </tr>
+
+
 {#    <tr>#}
 {#      <th scope="row">3</th>#}
 {#      <td colspan="2">Larry the Bird</td>#}
@@ -239,9 +107,6 @@
   </tbody>
 </table>
 
-
-
-
             </div>
         </div>
     </div>
@@ -249,52 +114,124 @@
 </section>
 <!-- //about page team section -->
 
+<!-- 模态框（Modal）,要自己手动处理遮罩层，官方的遮罩层有误 -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+             aria-labelledby="exampleModalLabel" aria-hidden="true"
+             data-backdrop = "false">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">警告</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+
+              <div id="tips" class="modal-body"></div>
+
+              <div class="modal-footer">
+                <button id="btn_known" onclick="known()" type="button" class="btn btn-primary" data-dismiss="modal">知道啦</button>
+              </div>
+            </div>
+          </div>
+        </div><!--模态框完毕-->
+
+
+    <!-- about page section2-->
+<section class="w3l-about">
+    <div class="container">
+        <div class="row align-items-center">
+              <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+                <h4 class="section-title">往日信笺</h4>
+                  <p class="text-center">现在与未来，都在下面啦~</p>
+              </div>
+            </div>
+
+
+        <div class="row about-content">
+            <div class="col-lg-6 info mb-lg-0 mb-5 align-center">
+                <span class="title">往日留言</span>
+                <h6>2020.05.09</h6>
+                <p class="mt-md-4 mt-3"> 加油鸭加油鸭~~~！！今天要去见其它的人！！！<br>呼呼!!.</p>
+                <a href="#author" class="author"><span class="fa fa-user mr-2"></span>卷积神经网络</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="../../../static/assets/images/about1.png" class="img-fluid img-shadow" alt="about">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //about page section2-->
+
+
+
 <!-- about page form section -->
 <section class="forms-29">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
-                <h4 class="section-title">好书特评</h4>
-                <p class="text-center">哎呀。</p>
+                <h4 class="section-title">寄未来</h4>
+                <p class="text-center">愿势如破竹。</p>
             </div>
         </div>
         <div class="form-main-cont-29 mt-5">
             <div class="content-29-form d-grid">
                 <form action="#" method="post">
+
+{#                        <div class="form-group">#}
+                            <span class="fa fa-envelope-open-o"></span>
+                            <label class="input__label" style=""> 内容</label>
+                            <div class="input-icon position-relative">
+{#                                <span class="fa fa-envelope-open-o"></span>#}
+                                <textarea rows="5" type="text" name="name" class="input__style" placeholder="安。所念皆如愿。" required></textarea>
+{#                            </div>#}
+{#                        </div>#}
                     <div class="forms-29-form">
                         <div class="form-group">
-                            <label class="input__label">书名</label>
+                            <label class="input__label">寄往日期</label>
                             <div class="input-icon position-relative">
                                 <span class="fa fa-user-o"></span>
-                                <input type="text" name="name" class="input__style" placeholder="First Name" required>
+                                <input type="text" name="email" class="input__style"  placeholder="用空格分隔" required>
                             </div>
                         </div>
+
                         <div class="form-group">
-                            <label class="input__label">作者</label>
-                            <div class="input-icon position-relative">
-                                <span class="fa fa-envelope-open-o"></span>
-                                <input type="email" name="email" class="input__style" placeholder="Your email" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputTemplate" class="input__label">选择分数</label>
+                            <label for="inputTemplate" class="input__label">隐私性</label>
                             <div class="input-icon position-relative">
                                 <span class="fa fa-get-pocket"></span>
                                 <select id="inputTemplate" class="input__style">
                                     <option selected="">选择...</option>
-                                    <option>1分</option>
-                                    <option>2分</option>
+                                    <option value="1" selected = "selected">公开</option> <!-- 这里容默认 -->
+                                    <option>私密</option>
                                 </select>
                                 </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-style mt-2">Lets Talk</button>
-                </form>
+
+                          <button type="submit" class="btn btn-primary btn-style mt-2" style="float:left;margin-top: 32px" >寄 出</button>
+
+                    </div></div>
+                  </form>
             </div>
         </div>
     </div>
     </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- move top -->
 <button onclick="topFunction()" id="movetop" class="bg-primary" title="Go to top">
@@ -318,6 +255,24 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  // 关于模态框
+  $("#collapse01").click(function(){
+
+
+            //处理空字符关系，弹出模态框
+            if( username.trim().length < 1 || pwd.trim().length < 1){
+                var insertText = "请填写完整用户名和密码！";
+
+                $('#shadow2').append('<div class="coverLayer"></div>');
+                document.getElementsByClassName("tips").innerHTML = insertText;
+                $('#exampleModal').modal('show');
+
+                return false;
+            }
+  });
+
+
 </script>
 <!-- //move top -->
 
@@ -336,24 +291,27 @@
 <script src="../../static/assets/js/owl.carousel.js"></script>
 <script>
   $(document).ready(function () {
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-      margin: 10,
-      nav: true,
-      loop: false,
-      responsive: {
-        0: {
-          items: 1
-        },
-        767: {
-          items: 2
-        },
-        1000: {
-          items: 3
-        }
-      }
-    })
-  })
+      var owl = $('.owl-carousel');
+      owl.owlCarousel({
+          margin: 10,
+          nav: true,
+          loop: false,
+          responsive: {
+              0: {
+                  items: 1
+              },
+              767: {
+                  items: 2
+              },
+              1000: {
+                  items: 3
+              }
+          }
+      });
+
+  });
+
+
 </script>
 
 <!-- disable body scroll which navbar is in active -->
@@ -361,16 +319,91 @@
   $(function () {
     $('.navbar-toggler').click(function () {
       $('body').toggleClass('noscroll');
-    })
+    });
+
+    // 这里的slideToggle出现了问题。。
+$('#collapse01').click(function (){
+          $("#collapseExample").slideToggle();
   });
-  
-  function top_task_folder() {
-      $('#top_task_img').fadeToggle();
-      $("#top_task_info").fadeToggle();
-  }
+  });
+
+
 
 </script>
 <!-- disable body scroll which navbar is in active -->
+
+<!--关于画布:宽500，高450。公式均为x,y-->
+{#<script>#}
+{#var c=document.getElementById("myCanvas");#}
+{#var ctx=c.getContext("2d");#}
+{##}
+{#//第一部分，画坐标#}
+{##}
+{#// 画x轴#}
+{#ctx.beginPath();#}
+{#ctx.moveTo(0,225);#}
+{#ctx.lineTo(600,225);#}
+{#// 画y轴#}
+{#ctx.moveTo(250,0);#}
+{#ctx.lineTo(250,450);#}
+{#//写x&y坐标名：重要/紧急#}
+{#ctx.font="20px Arial";#}
+{#ctx.fillStyle = "#124F8F";#}
+{#ctx.fillText("重",210,30);#}
+{#ctx.fillText("要",210,50);#}
+{#ctx.fillText("紧急",440,250);#}
+{#ctx.stroke();#}
+{##}
+{##}
+{#//第二部分，画圆#}
+{##}
+{#// 400,150的#}
+{#ctx.beginPath();#}
+{#ctx.moveTo(423,140);#}
+{#ctx.arc(408,140,15,0,Math.PI*2,false);#}
+{#ctx.fillStyle="rgba(230,26,26,1)";//半透明的红色#}
+{#ctx.fill();#}
+{#ctx.strokeStyle="rgba(230,26,26,1)";//1#}
+{#ctx.stroke();#}
+{##}
+{##}
+{#// 100,150的#}
+{#ctx.beginPath();#}
+{#ctx.moveTo(123,140);#}
+{#ctx.arc(108,140,15,0,Math.PI*2,false);#}
+{#ctx.fillStyle="rgba(247,199,9,1)";//半透明的红色#}
+{#ctx.fill();#}
+{#ctx.strokeStyle="rgba(247,199,9,1)";//2#}
+{#ctx.stroke();#}
+{##}
+{#//150，300#}
+{#ctx.beginPath();#}
+{#ctx.moveTo(173,290);#}
+{#ctx.arc(158,290,15,0,Math.PI*2,false);#}
+{#ctx.fillStyle="#124F8F";//半透明的红色#}
+{#ctx.fill();#}
+{#ctx.strokeStyle="#124F8F";//3#}
+{#ctx.stroke();#}
+{##}
+{##}
+{#//第三部分，写序号：123#}
+{#ctx.beginPath();#}
+{#ctx.fillStyle = "black";#}
+{#ctx.font="30px Arial";#}
+{#ctx.fillText("2",100,150);#}
+{#ctx.stroke();#}
+{##}
+{#ctx.beginPath();#}
+{#ctx.font="30px Arial";#}
+{#ctx.fillStyle = "white";#}
+{#ctx.fillText("1",400,150);#}
+{#ctx.fillText("3",150,300);#}
+{#ctx.stroke();#}
+{##}
+{#</script>#}
+
+
+
 
 <!-- bootstrap -->
 <script src="../../static/assets/js/bootstrap.min.js"></script>
