@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>还未完成，别删</title>
+<title>空出</title>
 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
 
     <!-- Template CSS -->
@@ -14,27 +14,30 @@
     <link rel = "stylesheet" href="../../../static/myCmpn/css/base.css">
 </head>
 <body><!--width="100%" height="100px"-->
-<div class="card text-center">
-  <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+<div class='title'> y </div>
+<div class='title'> i </div>
+<div class='title'> x </div>
+<div class='title'> z </div>
+<div class='title'> m </div>
 </body>
+<script>
+    var tt = getElementsByClassName("title");
+for (i = 0; i < tt.length; i++) {
+	var ul = document.querySelectorAll('.title')[i];
+	handler = function(event){
+		var e = event || window.event;
+		var target = e.target || e.srcElement;
+		console.log(target.innerHTML);
+	};
+	if (window.addEventListener){
+		ul.addEventListener("click",handler,false);
+	}
+	else if (window.attachEvent){
+		ul.attachEvent("onclick",handler);
+	}
+}
+</script>
+
 
 
 </html>

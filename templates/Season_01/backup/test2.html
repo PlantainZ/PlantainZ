@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>onclick属性的用法</title>
+    <style>
+        button{margin: 8px;}
+        input{width: 60px;height: 20px;}
+    </style>
+</head>
+<body>
+    <button id="btn1">-</button>
+    <input type="text" value="0">
+    <button id="btn2">+</button>
+    <script>
+        var ipt=document.querySelector('input');
+        //-
+        document.querySelector('#btn1').onclick=function(){
+            var v=ipt.value;
+            if(v<=0){
+                return;//结束函数
+            }
+            ipt.value=ipt.value-1;
+        };
+        //+
+        document.querySelector('#btn2').onclick=function(){
+            ipt.value=parseFloat(ipt.value)+1;
+        };
+    </script>
+</body>
+</html>

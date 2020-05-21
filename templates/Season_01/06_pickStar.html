@@ -1,5 +1,6 @@
 {% extends 'Season_01/base_subPage.html' %}
 {% load static %}
+{% load set_var %}
 {% block title %}摘星问月{% endblock %}
 {% block loadCss %}
     <link rel="stylesheet" type="text/css" href="{% static '/assets/calendar/stylesheets/simple-calendar.css' %}">
@@ -20,141 +21,115 @@
 
     <!-- contact section -->
     <section class="w3l-contact3" style="padding-top: 20px">
-    <div class="contact1-bg section-gap">
-        <div class="container" style="margin-top: 10px">
-                        <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12 px-lg-3 px-0">
-                            <h4 class="section-title">本月总览</h4>
-{#                            <p class="text-center">咕咕咕！</p>#}
+        <div class="contact1-bg section-gap">
+            <div class="container" style="margin-top: 10px">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12 px-lg-3 px-0">
+                    <h4 class="section-title">本月总览</h4>
+                    {#                            <p class="text-center">咕咕咕！</p>#}
+                </div>
+                <br>
+                <!--jq日历-->
+                <div id='container' class="col-md-6" style="width:100%;"></div>
+
+                <div class="row contact-main mt-5">
+                    <div class="col-md-6 ">
+                        <div class="column"
+                             style="margin-top: 30px;border-radius: 10px;text-align: center;background-image: url('{% static "assets/images/鼎湖-5.jpg" %}')">
+                            <h1 id = "selected_day_shower" style="color:white;width: 100%;text-align: center;margin-top: 30px;padding-top: 20px">
+                                <!--2020 - 05 - 13--></h1>
+                            <p class="head-main" style="color: white;padding-bottom: 20px">农历四月廿一，星期三</p>
                         </div>
-            <br>
-            <!--jq日历-->
-            <div id='container' class="col-md-6" style="width:100%;"></div>
 
-            <div class="row contact-main mt-5">
-                {#            <div style="margin-left: 20px">#}
-                <div class="col-md-6 ">
-                    <div class="column"
-                         style="margin-top: 30px;border-radius: 10px;text-align: center;background-image: url('{% static "assets/images/鼎湖-5.jpg" %}')">
-                        <h1 style="color:white;width: 100%;text-align: center;margin-top: 30px;padding-top: 20px">
-                            2020 - 05 - 13</h1>
-                        <p class="head-main" style="color: white;padding-bottom: 20px">农历四月廿一，星期三</p>
-                    </div>
+                        <!--左边任务栏!-->
+                        <div class="column2" style="width: 47%;float: left">
 
-                    <!--左边任务栏!-->
+                            <!--复习的标题-->
+                            <div style="width: 100%;text-align: center;margin-bottom: 20px"><!--如果想要无法选择，就用span代替a-->
+                                <span style="color: #124F8F"> <b>Review：</b></span>
+                                <span href="#" id="before1" class="badge badge-danger" style="color: white;
+                                height:40px;font-size: 20px;padding-top: 10px">1 <span style="font-size: 10px">days ago</span></span>
+                                <a href="#" id="before2" class="badge badge-warning" style="color: black;">2</a>
+                                <a href="#" id="before4" class="badge badge-primary" style="color: white">4</a>
+                                <a href="#" id="before7" class="badge badge-success" style="color: white">7</a>
+                                <a href="#" id="before15" class="badge badge-dark" style="color: white">15</a>
+                            </div>
+                            <!--复习的标题结束-->
+                            <ul class="list-group">
+                                <div id="task_show"></div>
+                                <!--复习内容嵌入，参见后边JS代码-->
+                            </ul>
+                        </div>
 
-                        <div class="column2 " style="width: 47%;float: left;">
+                        <!--左边任务栏结束-->
+
+
+                        <!--右边的任务栏：NEWTASK-->
+                        <div class="column2 " style="width: 47%;float: right;">
                             <!--new task的标题-->
                             <div style="width: 100%;text-align: center;margin-bottom: 20px">
-                                 <span> <b>New task</b></span>
+                                <span> <b>New task</b></span>
                             </div>
                             <!--new task的标题 结束-->
 
-                        <ul class="list-group">
-                            <li id = "shangjiang" class="list-group-item list-group-item-action d-flex justify-content-between
-  btn btn-link btn-block text-left" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
-                                <b>1. 上将军印</b>摘星问月5-10
-                                <span class="badge badge-primary badge-pill" style="color: white">14</span>
-                            </li>
-                            <!--卡片开始-->
-                            <div id="collapseOne" style="display: none" class="collapse show" aria-labelledby="headingOne"
-                                 data-parent="#accordionExample">
-                                <div id="timeDistribute" style="margin-top: 5px;margin-left: 20px">
-                                    <label class="my-1 mr-2" for="inlineFormCustomSelectPref"
-                                           style="float: left;margin-top: 10px">预分配时间</label>
-                                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"
-                                            style="float: left;width: 120px">
-                                        <option value="0">0小时</option>
-                                        <option value="1" selected>1小时</option>
-                                        <option value="2">2小时</option>
-                                        <option value="3">3小时</option>
-                                    </select>
-                                    <input class="form-control mx-sm-3" style="float: left;width: 120px;margin-top: 3px"
-                                           placeholder="不填也没关系">
-                                    <label for="inputPassword6" style="margin-top: 9px">分钟</label>
-                                </div>
-                                <div class="card-body">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                    brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt
-                                    aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
-                                    Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                                    ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them
-                                    accusamus labore sustainable VHS.
-                                </div>
+                            <!--任务列表-->
+                            <ul class="list-group">
+                                <li class="review-slidedown list-group-item list-group-item-action  justify-content-between
+                                        btn btn-link btn-block text-left"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <b>1. 上将军印</b><span style="margin-left: 60px">摘星问月5-10</span>
+                                </li>
 
-                            </div><!--卡片完结-->
+                                <!--detail展示页面·开始-->
+                                <div id="collapseOne" style="display: none" class="collapse show"
+                                     aria-labelledby="headingOne"
+                                     data-parent="#accordionExample">
+                                    <div id="timeDistribute" style="margin-top: 5px;margin-left: 20px">
+                                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"
+                                               style="float: left;margin-top: 10px">预分配时间</label>
+                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"
+                                                style="float: left;width: 120px">
+                                            <option value="0">0小时</option>
+                                            <option value="1" selected>1小时</option>
+                                            <option value="2">2小时</option>
+                                            <option value="3">3小时</option>
+                                        </select>
+                                        <input class="form-control mx-sm-3"
+                                               style="float: left;width: 120px;margin-top: 3px"
+                                               placeholder="不填也没关系">
+                                        <label for="inputPassword6" style="margin-top: 9px">分钟</label>
+                                    </div>
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt
+                                        aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+                                        et.
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                        sapiente
+                                        ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of
+                                        them
+                                        accusamus labore sustainable VHS.
+                                    </div>
+
+                                </div><!--detail内容完结-->
 
 
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                <b>3. 雪絮金屏</b>起来画画
-                                <span class="badge badge-primary badge-pill">2</span>
-                            </li>
+                                <li class="list-group-item list-group-item-action justify-content-between align-items-center">
+                                    <b>3. 雪絮金屏</b><span style="margin-left: 60px">起来画画</span>
+                                </li>
 
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                Morbi leo risus
-                                <span class="badge badge-primary badge-pill">1</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--左边任务栏结束-->
-
-                    <!--右边的任务栏！-->
-                    <div class="column2" style="width: 47%;float: right">
-
-                        <!--复习的标题-->
-                        <div style="width: 100%;text-align: center;margin-bottom: 20px">
-                                 <span style="color: #124F8F"> <b>Review</b></span>
-                            <a href="#" id="before1" class="badge badge-danger" style="color: white">1</a>
-                            <a href="#" id="before2" class="badge badge-warning" style="color: black">2</a>
-                            <a href="#" id="before4" class="badge badge-primary" style="color: white">4</a>
-                            <a href="#" id="before7" class="badge badge-success" style="color: white">7</a>
-                            <a href="#" id="before15" class="badge badge-dark" style="color: white">15</a>
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                    Morbi leo risus
+                                </li>
+                            </ul>
                         </div>
-                        <!--复习的标题结束-->
-
-                        <ul class="list-group">
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between
-  btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                                aria-controls="collapseOne">
-                                <b>1. 上将军印</b>摘星问月5-10
-                                <span class="badge badge-primary badge-pill" style="color: white">14</span>
-                            </li>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                 data-parent="#accordionExample">
-                                <label class="my-1 mr-2" for="inlineFormCustomSelectPref"
-                                       style="float: left;margin-top: 15px">预分配时间</label>
-                                <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"
-                                        style="float: left;width: 120px;margin-top: 10px;">
-                                    <option value="0">0小时</option>
-                                    <option value="1" selected>1小时</option>
-                                    <option value="2">2小时</option>
-                                    <option value="3">3小时</option>
-                                </select>
-                                <input class="form-control mx-sm-3" style="float: left;width: 120px;margin-top: 10px;"
-                                       placeholder="不填也没关系">
-                                <label for="inputPassword6" style="margin-top: 14px">分钟</label>
-                            </div>
-                            <div class="card-body" style="padding-top: 10px">
-                                阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴
-                            </div>
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                <b>2. 封渊镇煞</b>一小时日常，小cw
-                                <span class="badge badge-primary badge-pill">2</span>
-                            </li>
-
-                            <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                                Morbi leo risus
-                                <span class="badge badge-primary badge-pill">1</span>
-                            </li>
-                        </ul>
                     </div>
-                    <!--右边任务栏结束-->
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
 
@@ -381,17 +356,58 @@
     </button>
 
 
-
-    <!--引入日历-->
+    <!--1.引入日历-->
     <script>
         var myCalendar = new SimpleCalendar('#container');
-        {#var a = myCalendar.#}
+        var a = myCalendar.getSelectedDay();
+        var shower = document.getElementById('selected_day_shower');
+        var date = a.getFullYear()+' - '+a.getMonth() + ' - '+a.getDate();
+        shower.innerHTML = ''+date;
+        $("#container").click(function () {
+            // a.getDay():获得0~6,表示周几。
+            //a.getDate():获得的是0~31，表示日期。不包括月份。
+            //a.getFullYear():输出2020
+            //a.getMonth()+1 : 当前月份。2020 - 05 - 13
+            var slt = myCalendar.getSelectedDay();
+            var year = slt.getFullYear();
+            var month = slt.getMonth()+1;
+            var day = slt.getDate();
+            date = year+' - '+month + ' - '+day;
+            shower.innerHTML = ''+date;
+
+
+
+            //然后ajax向后台询问具体数据，放到门面上。
+            $.ajax({
+                    url : "/plan/daySwitch",
+                    type : 'post',
+                    dataType : "text",
+                    data : {
+                        r_year : year,
+                        r_month: month,
+                        r_day : day,
+                    },
+                    beforeSend: function (xhr, setting) {
+                        xhr.setRequestHeader("X-CSRFToken", "{{ csrf_token }}")
+                     },
+                    success : function(result) {
+                        alert('这是从后端返回的rst个数！'+result.length);
+                        $.each(result,function(i,item){
+                            var vfields = item.fields;
+                            {#var _len=$("#servers tr").length;#}
+                              alert(vfields.)
+                        })
+
+                    },
+                    error :function (ret) {
+                        alert('提交失败！')
+                    }
+                })
+        })
     </script>
+    <!--引入日历·结束-->
 
-
-
-
-
+    <!--2.返回顶部按钮-->
     <script>
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function () {
@@ -414,7 +430,7 @@
     </script>
     <!-- //move top -->
 
-
+    <!--3.标题栏设置-->
     <script>
         $(document).ready(function () {
             var owl = $('.owl-carousel');
@@ -433,13 +449,63 @@
                         items: 3
                     }
                 }
-            })
-
-            $("#shangjiang").click(function () {
-                $("#collapseOne").slideToggle();
-            })
+            });
         })
     </script>
+
+
+
+    <!--动态生成复习REVIEW内容-->
+    <script>
+        // 实现动态添加数据库里的任务，动态id，并加入监听slideDown
+        // 使用后台传过来的数据添加组件，并动态生成id
+        {% with i=1 %}
+            {% for var in yesterday %}
+                var htmlDetail = '<li id="task_' + '{{ i }}' + '" class="getid collapseFirst list-group-item list-group-item-action d-flex justify-content-between\n' +
+                    '      btn btn-link btn-block text-left" data-toggle="collapse" href="#task_' + '{{ i }}' + '_detail" aria-expanded="false" aria-controls="task_' + '{{ i }}' + '_detail"' +
+                    '           style = "background-color:#FFEEEE">\n' +
+                    '                                    <b>{{ i }}. {{ var.pj_name }}</b><span style="margin-left: -70px">{{ var.title }}</span>\n' +
+                    '                           <span class="badge badge-primary badge-pill" style="color: white;padding-top: 6px">{{ var.review_times }}</span>\n' +
+                    '                                </li>\n' +
+                    '                                <!--卡片开始-->\n' +
+                    '                                <div id = "task_' + '{{ i }}' + '_detail" class=" collapseOne collapse show" style="display: none"' +
+                    '                        aria-labelledby="headingOne" data-parent="#task_' + '{{ i }}' + '">\n' +
+                    '                                    <div id="timeDistribute" style="margin-top: 5px;margin-left: 20px">\n' +
+                    '                                        <label class="my-1 mr-2" for="inlineFormCustomSelectPref"\n' +
+                    '                                               style="float: left;margin-top: 10px">预分配时间</label>\n' +
+                    '                                        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref"\n' +
+                    '                                                style="float: left;width: 120px">\n' +
+                    '                                            <option value="0">0小时</option>\n' +
+                    '                                            <option value="1" selected>1小时</option>\n' +
+                    '                                            <option value="2">2小时</option>\n' +
+                    '                                            <option value="3">3小时</option>\n' +
+                    '                                        </select>\n' +
+                    '                                        <input class="form-control mx-sm-3" style="float: left;width: 120px;margin-top: 3px"\n' +
+                    '                                               placeholder="不填也没关系">\n' +
+                    '                                        <label for="inputPassword6" style="margin-top: 9px">分钟</label>\n' +
+                    '                                    </div>\n' +
+                    '                                    <div class="card-body">\n' +
+                    '                                               {{ var.detail }}' +
+                    '                                    </div>\n' +
+                    '\n' +
+                    '                                </div><!--卡片完结-->';
+                $('#task_show').append(htmlDetail);
+                {% set i++ %}
+            {% endfor %}
+        {% endwith %}
+
+        //后面就是，获取点击的元素的id，slideToggle展示对应的详细信息
+        obj = document.querySelectorAll('.getid');
+        for (x = 0; x < obj.length; x++) {
+            obj[x].onclick = function (e) {
+                var target_id = this.id;
+                pointCard_id = '#' + target_id + '_detail';
+                $(pointCard_id).slideToggle();
+            };
+
+        }
+    </script>
+
 
     <!-- disable body scroll which navbar is in active -->
     <script>

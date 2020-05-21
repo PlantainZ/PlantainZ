@@ -56,7 +56,8 @@
   padding-top: 20px;
 }
 .sc-item:nth-child(7n) .day, .sc-item:nth-child(7n+6) .day {
-  color: rgba(224, 8, 8, 0.74);
+  /*color: rgba(224, 8, 8, 0.74);*/
+  color: indianred;
 }
 .sc-vocation {
   background-color: #FFEBEC;
@@ -81,11 +82,14 @@
 .sc-othermenth .day, .sc-othermenth .lunar-day {
   color: #C1C0C0 !important;
 }
-.sc-active-day, .sc-selected {
+.sc-active-day, .sc-selected  {
   border: 1px solid #124F8F;
+  color: white;
+  background-color: #124F8F;
 }
 .sc-today {
-  background-color: #124F8F;
+  /*background-color: #124F8F;*/
+  background-image: url("../../../assets/images/鼎湖-3.jpg");
   color: white;
   border: 1px solid #124F8F;
 }
@@ -96,14 +100,16 @@
   color: white !important;
 }
 .sc-item .lunar-day {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: normal;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .sc-festival .lunar-day {
-  color: #E00808;
+  color: #7abaff;
+  font-size: 13px;
 }
+
 
 /*.sc-item:last-child, .sc-item:nth-child(7n) {
   border-width: 0 1px 1px 1px;
@@ -130,6 +136,7 @@
 }
 .sc-week-item:nth-child(7n), .sc-week-item:nth-child(7n+6) {
   color: rgba(224, 8, 8, 0.74)!important;
+  /*color: indianred;*/
 }
 .sc-actions {
   float: left;

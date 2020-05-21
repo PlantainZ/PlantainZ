@@ -248,3 +248,10 @@ class ActiveView(View):
 class pickStarView(View):
     def get(self,request):
         return render(request, 'Season_01/06_pickStar.html')
+
+# /user/logout
+class logoutView(View):
+    def get(self,request):
+        logout(request)
+        # 清除用户的信息
+        return redirect(reverse('user_private:login'))
