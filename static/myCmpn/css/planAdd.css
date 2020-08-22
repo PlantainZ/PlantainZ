@@ -1,0 +1,12 @@
+
+
+
+input[type=date]::-webkit-inner-spin-button {
+    visibility: hidden;
+
+}
+
+input[type=date]::-webkit-clear-button {
+    visibility: hidden;
+
+}
