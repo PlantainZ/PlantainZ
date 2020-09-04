@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../../static/myCmpn/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../static/myCmpn/css/login.css">
+     <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../../../static/myCmpn/js/jquery-3.5.0.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../../../static/myCmpn/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="writer" style="width: 800px;height: 600px;background-color: grey"
+        onclick="fun()">
+        <p id = 'textshow'>aaaaaaa</p>
+    </div>
+
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+<!---->
+</body>
+
+<script>
+    var fun = function textAreaShower() {
+        var elem = document.getElementById('#writer');
+        //$('#writer p').remove();
+        $('#writer p').hide();
+        $('#writer').css('background-color', 'black');
+        //jQuery对象没有style属性，首次要通过css设置，不可以style.backgroundColor!!
+        $('#writer').append('<div class="form-group">\n' +
+            '    <label for="exampleFormControlTextarea1">Example textarea</label>\n' +
+            '    <textarea class="form-control" rows="3" id="detailDiscript" onblur="moveElsewhere()"></textarea>\n' +
+            '  </div>');
+        fun = function(){} //将本函数置空，也就是，这个是个只执行一次的函数。
+    };
+
+
+    function moveElsewhere() {
+        pElem = document.getElementById('#textshow');
+        userData = document.getElementById('detailDiscript').value;
+        pElem.
+        pElem.innerText=userData;
+    }
+</script>
+
+</html>

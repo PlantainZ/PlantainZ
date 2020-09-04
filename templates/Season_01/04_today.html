@@ -4,6 +4,7 @@
 {% block loadCss %}
     <link rel="stylesheet" href="{% static '/myCmpn/css/today.css' %}">
     <link rel="stylesheet" href="{% static '/myCmpn/iconfont/iconfont.css' %}">
+    <script src="../../static/myCmpn/js/echarts.js"></script> <!--引入echarts-->
 {% endblock %}
 {% block barName %}今日计划{% endblock %}
 
@@ -19,6 +20,22 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-8 offset-lg-2 col-md-12 col-sm-12">
+
+
+
+
+
+
+                    <!--试试这个echarts版本-->
+                    <div id="planChart" style="width: 600px;height:400px;"></div>
+                    <!--试试这个echarts版本-->
+
+
+
+
+
+
+
 {#                    <h4 class="section-title">今日计划</h4>#}
                     <span style="float: left">今日进度：</span>
                     <div class="progress">
@@ -344,83 +361,44 @@ $('#collapse01').click(function (){
           $("#collapseExample").slideToggle();
   });
   });
+</script>
 
 
+<script> //echarts的图表！！
+
+ var myChart = echarts.init(document.getElementById('planChart'));
+
+option = {
+    series: [{
+        type: 'treemap',
+        data: [{
+            name: 'nodeA',            // First tree
+            value: 10,
+            children: [{
+                name: 'nodeAa',       // First leaf of first tree
+                value: 4
+            }, {
+                name: 'nodeAb',       // Second leaf of first tree
+                value: 6
+            }]
+        }, {
+            name: 'nodeB',            // Second tree
+            value: 20,
+            children: [{
+                name: 'nodeBa',       // Son of first tree
+                value: 20,
+                children: [{
+                    name: 'nodeBa1',  // Granson of first tree
+                    value: 20
+                }]
+            }]
+        }]
+    }]
+};
+
+myChart.setOption(option);
 
 </script>
-<!-- disable body scroll which navbar is in active -->
-
-<!--关于画布:宽500，高450。公式均为x,y-->
-{#<script>#}
-{#var c=document.getElementById("myCanvas");#}
-{#var ctx=c.getContext("2d");#}
-{##}
-{#//第一部分，画坐标#}
-{##}
-{#// 画x轴#}
-{#ctx.beginPath();#}
-{#ctx.moveTo(0,225);#}
-{#ctx.lineTo(600,225);#}
-{#// 画y轴#}
-{#ctx.moveTo(250,0);#}
-{#ctx.lineTo(250,450);#}
-{#//写x&y坐标名：重要/紧急#}
-{#ctx.font="20px Arial";#}
-{#ctx.fillStyle = "#124F8F";#}
-{#ctx.fillText("重",210,30);#}
-{#ctx.fillText("要",210,50);#}
-{#ctx.fillText("紧急",440,250);#}
-{#ctx.stroke();#}
-{##}
-{##}
-{#//第二部分，画圆#}
-{##}
-{#// 400,150的#}
-{#ctx.beginPath();#}
-{#ctx.moveTo(423,140);#}
-{#ctx.arc(408,140,15,0,Math.PI*2,false);#}
-{#ctx.fillStyle="rgba(230,26,26,1)";//半透明的红色#}
-{#ctx.fill();#}
-{#ctx.strokeStyle="rgba(230,26,26,1)";//1#}
-{#ctx.stroke();#}
-{##}
-{##}
-{#// 100,150的#}
-{#ctx.beginPath();#}
-{#ctx.moveTo(123,140);#}
-{#ctx.arc(108,140,15,0,Math.PI*2,false);#}
-{#ctx.fillStyle="rgba(247,199,9,1)";//半透明的红色#}
-{#ctx.fill();#}
-{#ctx.strokeStyle="rgba(247,199,9,1)";//2#}
-{#ctx.stroke();#}
-{##}
-{#//150，300#}
-{#ctx.beginPath();#}
-{#ctx.moveTo(173,290);#}
-{#ctx.arc(158,290,15,0,Math.PI*2,false);#}
-{#ctx.fillStyle="#124F8F";//半透明的红色#}
-{#ctx.fill();#}
-{#ctx.strokeStyle="#124F8F";//3#}
-{#ctx.stroke();#}
-{##}
-{##}
-{#//第三部分，写序号：123#}
-{#ctx.beginPath();#}
-{#ctx.fillStyle = "black";#}
-{#ctx.font="30px Arial";#}
-{#ctx.fillText("2",100,150);#}
-{#ctx.stroke();#}
-{##}
-{#ctx.beginPath();#}
-{#ctx.font="30px Arial";#}
-{#ctx.fillStyle = "white";#}
-{#ctx.fillText("1",400,150);#}
-{#ctx.fillText("3",150,300);#}
-{#ctx.stroke();#}
-{##}
-{#</script>#}
-
-
 
 
 <!-- bootstrap -->

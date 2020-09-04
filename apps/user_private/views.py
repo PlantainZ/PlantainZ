@@ -218,9 +218,6 @@ class registerView(View):
 class todayView(LoginRequiredMixin,View):
     def get(self,request):
         return render(request, 'Season_01/04_today.html')
-class tmrwView(LoginRequiredMixin,View):
-    def get(self, request):
-        return render(request, 'Season_01/05_tmrw.html')
 
 class ActiveView(View):
     """用户激活"""
