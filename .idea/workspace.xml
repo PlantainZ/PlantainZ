@@ -8,21 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8dcff887-7ffe-4306-9c1f-f1142903e6eb" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/PlantainZ/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/deliberate/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/myCmpn/js/echarts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Season_01/backup/05_deliberate.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Season_01/backup/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/Season_01/backup/testEcharts.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlantainZ" beforeDir="false" afterPath="$PROJECT_DIR$/PlantainZ" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlantainZ/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlantainZ/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PlantainZ/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlantainZ/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/plan/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/plan/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user_private/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_private/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/user_private/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user_private/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Season_01/04_today.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Season_01/04_today.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Season_01/05_tmrw.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Season_01/05_deliberate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Season_01/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Season_01/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/Season_01/05_deliberate.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="257" column="14" lean-forward="true" selection-start-line="257" selection-start-column="14" selection-end-line="257" selection-end-column="14" />
+            <state relative-caret-position="78">
+              <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -50,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/Season_01/06_pickStar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14383">
-              <caret line="571" column="14" lean-forward="true" selection-start-line="571" selection-start-column="14" selection-end-line="571" selection-end-column="14" />
+            <state relative-caret-position="14846">
+              <caret line="571" column="14" selection-start-line="571" selection-start-column="14" selection-end-line="571" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -175,7 +164,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
+    <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1100" />
@@ -386,23 +375,25 @@
       <workItem from="1597713661596" duration="2507000" />
       <workItem from="1598063121143" duration="8131000" />
       <workItem from="1598089394667" duration="722000" />
-      <workItem from="1599193580514" duration="13132000" />
+      <workItem from="1599193580514" duration="13456000" />
+      <workItem from="1599462889392" duration="600000" />
+      <workItem from="1599883982777" duration="3215000" />
+      <workItem from="1600704735487" duration="7000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301340000" />
+    <option name="totallyTimeSpent" value="305486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15013404" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15616623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32841823" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32841823" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39812332" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -801,17 +792,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Season_01/06_pickStar.html">
+    <entry file="file://$PROJECT_DIR$/templates/Season_01/05_deliberate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14383">
-          <caret line="571" column="14" lean-forward="true" selection-start-line="571" selection-start-column="14" selection-end-line="571" selection-end-column="14" />
+        <state relative-caret-position="78">
+          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Season_01/05_deliberate.html">
+    <entry file="file://$PROJECT_DIR$/templates/Season_01/06_pickStar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="257" column="14" lean-forward="true" selection-start-line="257" selection-start-column="14" selection-end-line="257" selection-end-column="14" />
+        <state relative-caret-position="14846">
+          <caret line="571" column="14" selection-start-line="571" selection-start-column="14" selection-end-line="571" selection-end-column="14" />
         </state>
       </provider>
     </entry>
