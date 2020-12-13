@@ -2,16 +2,9 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://C:/XXXX_Learning/Software_Engineering/DevTool/Anaconda_py37/envs/TFGPUP36/Lib/wsgiref/headers.py" line="142" />
-    <bookmark url="file://$PROJECT_DIR$/templates/Season_01/test.html" />
-    <bookmark url="file://$PROJECT_DIR$/static/assets/calendar/javascripts/simple-calendar.js" line="233" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8dcff887-7ffe-4306-9c1f-f1142903e6eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/PlantainZ/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlantainZ" beforeDir="false" afterPath="$PROJECT_DIR$/PlantainZ" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlantainZ/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlantainZ/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlantainZ/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlantainZ/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="8dcff887-7ffe-4306-9c1f-f1142903e6eb" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,47 +19,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Season_01/05_deliberate.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Season_01/01_login2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Season_01/02_register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/Season_01/03_firstPage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/Season_01/06_pickStar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14820">
-              <caret line="571" column="14" selection-start-line="571" selection-start-column="14" selection-end-line="571" selection-end-column="14" />
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="156">
+                <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -129,9 +89,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/apps/plan/test2.py" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -189,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="980" />
@@ -201,7 +158,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,26 +165,11 @@
               <item name="PlantainZ" type="b2602c69:ProjectViewProjectNode" />
               <item name="PlantainZ" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="PlantainZ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlantainZ" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlantainZ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlantainZ" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PlantainZ" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PlantainZ" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Season_01" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,17 +184,17 @@
     <property name="settings.editor.splitter.proportion" value="0.2642998" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\XXXX_CodeRepository\PlantainZ\templates\Season_01\backup" />
-      <recent name="C:\XXXX_CodeRepository\PlantainZ\static\myCmpn\js" />
-      <recent name="C:\XXXX_CodeRepository\PlantainZ\static\assets\images" />
-      <recent name="C:\XXXX_CodeRepository\PlantainZ\static\assets\images\myImg" />
-      <recent name="C:\XXXX_CodeRepository\PlantainZ\static\assets\images\icon" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\XXXX_CodeRepository\PlantainZ\apps" />
       <recent name="C:\XXXX_CodeRepository\PlantainZ\apps\plan" />
       <recent name="C:\XXXX_CodeRepository\PlantainZ\static\assets\images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\XXXX_CodeRepository\PlantainZ" />
+      <recent name="C:\XXXX_CodeRepository\PlantainZ\templates\Season_01\backup" />
+      <recent name="C:\XXXX_CodeRepository\PlantainZ\static\myCmpn\js" />
+      <recent name="C:\XXXX_CodeRepository\PlantainZ\static\assets\images" />
+      <recent name="C:\XXXX_CodeRepository\PlantainZ\static\assets\images\myImg" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -376,17 +317,18 @@
       <workItem from="1599883982777" duration="3215000" />
       <workItem from="1600704735487" duration="7000" />
       <workItem from="1607863313868" duration="505000" />
+      <workItem from="1607864004623" duration="419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305991000" />
+    <option name="totallyTimeSpent" value="306410000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15817694" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16018766" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -434,9 +376,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/assets/images/鼎湖-6.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/plan/templatetags/set_var.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
@@ -772,21 +711,14 @@
     <entry file="file://$PROJECT_DIR$/templates/Season_01/05_deliberate.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
-          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/Season_01/06_pickStar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14820">
-          <caret line="571" column="14" selection-start-line="571" selection-start-column="14" selection-end-line="571" selection-end-column="14" />
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/Season_01/01_login2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -797,10 +729,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/Season_01/06_pickStar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14820">
+          <caret line="571" column="14" selection-start-line="571" selection-start-column="14" selection-end-line="571" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/Season_01/03_firstPage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="156">
+            <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
