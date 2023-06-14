@@ -1,6 +1,6 @@
 # 剑怜情
 
-- 私人练习仓
+- 私人练习仓，商项闭源。
 
 - walked on without a backward glance.
 
